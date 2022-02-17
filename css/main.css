@@ -1,0 +1,726 @@
+html, body {
+    margin: 0;
+    background: #f7f6f6;
+}
+
+@font-face {
+    font-family: 'Capture it';
+    src: url("../fonts/Captureit.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url("../fonts/RobotoBlack.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url("../fonts/RobotoThin.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url("../fonts/RobotoLight.ttf");
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url("../fonts/RobotoBold.ttf");
+}
+
+@font-face {
+    font-family: "Lifehack Basic";
+    src: url("../fonts/Lifehack-Basic.otf");
+}
+
+div#main {
+    background-image: url("../images/bobby-rodriguezz-1043115-unsplash.png");
+    height: 908px;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#logo span {
+    font-size: 30px;
+    font-family: "Capture it", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 1.8;
+}
+
+div#menu ul li#close-button {
+    display: none;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+div#menu ul li#close-button:hover {
+    color: #a90000;
+}
+
+div#menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+}
+
+div#menu ul li:first-child {
+    list-style: none;
+}
+
+div#menu ul li {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 3.375;
+}
+
+div#menu ul li.active a {
+    font-family: "RobotoBold", sans-serif;
+}
+
+div#menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+button.btn-white {
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.308;
+    text-align: center;
+    background: transparent;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 207px;
+    height: 48px;
+    outline: none;
+    cursor: pointer;
+}
+
+button.btn-white:hover, button.btn-white:active {
+    border-color: #f6a501;
+    color: #f6a501;
+}
+
+div#titles {
+    width: 1170px;
+    margin: 60px auto 0 auto;
+}
+
+div#title-burgers {
+    width: 600px;
+    height: 130px;
+    background: url("../images/shtamp.png");
+    background-size: 100% 100%;
+    font-size: 55px;
+    font-family: "Capture it", sans-serif;
+    color: rgb(246, 165, 1);
+    text-align: center;
+    text-shadow: 0 0 91.16px rgba(2, 7, 8, 1);
+    line-height: 130px;
+}
+
+.btn-yellow {
+    font-size: 15px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+    border-radius: 10px;
+    background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+    background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+    background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+    width: 209px;
+    height: 50px;
+    margin-top: 60px;
+    outline: none;
+    border: 0;
+}
+
+.btn-yellow:hover {
+    box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);
+    cursor: pointer;
+}
+
+#title-text {
+    font-size: 40px;
+    color: white;
+    font-family: "Lifehack Basic", sans-serif;
+    line-height: 1;
+    text-align: left;
+    text-shadow: 0 0 14.25px rgba(2, 7, 8, 1);
+    -moz-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+    -webkit-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+    -ms-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+    margin-top: 35px;
+    margin-left: 45px;
+}
+
+#title-text span {
+    color: rgb(246, 166, 1);
+}
+
+div#features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+div#features div.feature {
+    width: 370px;
+    margin-bottom: 100px;
+}
+
+div#features div.feature div.feature-image {
+    width: 96px;
+    height: 79px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+div#features div.feature div.feature-title {
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 1.251;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div#features div.feature div.feature-text {
+    font-size: 18px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 1.222;
+    text-align: center;
+}
+
+div#description {
+    background-image: url("../images/jaco-pretorius-473524-unsplash.png");
+    height: 1140px;
+    background-position: center;
+    margin-top: -100px;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+.block-title {
+    font-size: 35px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+div#description h2.block-title {
+    margin: 50px 0 50px 0;
+}
+
+div#description div#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+div#description div#description-container div#description-text {
+    max-width: 420px;
+}
+
+div#description div#description-container div#description-text div#description-text-title {
+    font-size: 30px;
+    font-family: "Lifehack Basic", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 1.167;
+    text-align: left;
+    margin: 50px 0;
+}
+
+div#description div#description-container div#description-text div.description-text-words {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 1.563;
+    text-align: left;
+    text-indent: 20px;
+    margin-bottom: 30px;
+}
+
+div#description div#description-container div#description-image img {
+    width: 720px;
+}
+
+div#stock {
+    width: 1170px;
+    margin: -20px auto 0 auto;
+}
+
+div#stock h2.block-title {
+    font-size: 35px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(51, 23, 3);
+    text-transform: uppercase;
+    line-height: 1.543;
+    text-align: center;
+}
+
+div#stock .category-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+div#stock .category-container .category {
+    font-size: 20px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 7px;
+    padding: 5px 18px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+div#stock .category-container .active {
+    border: 1px solid rgb(51, 23, 3);
+    font-family: "RobotoBold", sans-serif;
+}
+
+div#stock .category-container .category:hover {
+    border: 1px solid rgb(51, 23, 3);
+    cursor: pointer;
+}
+
+div.products {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+div.products .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.products .product .product-image {
+    width: 580px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.products .product .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.products .product .product-content {
+    width: 500px;
+}
+
+div.products .product .product-content .product-content-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 25px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(51, 23, 3);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+div.products .product .product-content .product-content-title img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+div.products .product .product-content .product-content-description {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+div.products .product .product-content .product-content-properties {
+    display: flex;
+    justify-content: left;
+}
+
+div.products .product .product-content .product-content-properties .product-content-property:first-child {
+    margin-right: 70px;
+}
+
+div.products .product .product-content .product-content-properties .product-content-property img {
+    margin-right: 10px;
+}
+
+div.products .product .product-content .product-content-properties .product-content-property span {
+    font-size: 20px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(51, 23, 3);
+    line-height: 1.5;
+}
+
+div.products-nav {
+    display: flex;
+    margin-bottom: 95px;
+    margin-top: 10px;
+}
+
+div.products-nav .product-nav {
+    max-width: 75px!important;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    opacity: 30%;
+}
+
+div.products-nav .product-nav.slick-current {
+    opacity: 100%;
+}
+
+div.products-nav .product-nav:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+div.products-nav .product-nav img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.products .product:focus {
+    outline: none;
+}
+
+.products-nav .product-nav:focus {
+    outline: none;
+}
+
+.slick-slide img {
+    display: inline;
+}
+
+#stock .slick-prev:before {
+    content: url("../images/previous.png");
+}
+
+#stock .slick-next:before {
+    content: url("../images/next.png");
+}
+
+#stock .slick-next {
+    left: 600px;
+}
+
+#fries-container, #sauces-container, #drinks-container {
+    display: none;
+}
+
+div.product-nav.slick-slide.slick-active {
+    width: 75px;
+}
+
+#info {
+    background-image: url("../images/bg-footer.png");
+    background-position: top center;
+    margin-top: -100px;
+    padding-top: 160px;
+}
+
+#info h2.block-title {
+    margin-bottom: 60px;
+}
+
+#reviews {
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#reviews .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    outline: 0;
+    margin: 0 50px;
+}
+
+#reviews .review .review-image {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+#reviews .review .review-text {
+    width: 325px;
+}
+
+#reviews .review .review-text .review-text-title {
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(254, 254, 254);
+    text-transform: uppercase;
+    line-height: 1.504;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+#reviews .review .review-text .review-text-description {
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 25px;
+}
+
+#addresses {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#addresses .block-title {
+    margin: 150px auto 60px auto;
+}
+
+#addresses-container {
+    display: flex;
+    justify-content: center;
+}
+
+#addresses-container .address-container {
+    width: 505px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+#addresses-container .address-container .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#addresses-container .address-container .address .address-text {
+    width: 270px;
+    text-align: left;
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(247, 246, 246);
+    line-height: 2.7;
+    vertical-align: middle;
+}
+
+#addresses-container .address-container .address .address-text img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#addresses-container .address-container .address .address-button {
+    margin-top: 40px;
+}
+
+#instagram {
+    margin: 85px auto 0 auto;
+    width: 1170px;
+    text-align: center;
+}
+
+#instagram a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#instagram #instagram-text {
+    margin-top: 35px;
+    font-size: 20px;
+    font-family: "Roboto Black", sans-serif;
+    color: #F6A501;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: rgb(18, 8, 1);
+    width: 100%;
+    height: 60px;
+    font-size: 10px;
+    font-family: "Roboto Thin", sans-serif;
+    color: rgb(188, 188, 188);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+#reviews .slick-prev:before {
+    content: url("../images/previous-2.png");
+}
+
+#reviews .slick-next:before {
+    content: url("../images/next-2.png");
+}
+
+#reservation-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.91);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#reservation-container #reservation {
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 40.67px 8.33px rgba(2, 7, 8, 1);
+    width: 584px;
+    padding: 45px 35px 70px 35px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#reservation #reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#reservation h2.block-title {
+    font-size: 25px;
+}
+
+#reservation #reserve {
+    margin: 30px 0 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#reservation #reserve .reserve-input label {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 22px;
+}
+
+#reservation #reserve .reserve-input {
+    margin-top: 15px;
+}
+
+#reservation #reserve .reserve-input input {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 248px;
+    height: 39px;
+    background: transparent;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#reservation #reserve-button {
+    text-align: center;
+    margin-top: 0;
+}
+
+#reservation #reserve-button button {
+    margin-top: 0;
+}
+
+#reservation #reservation-sent {
+    display: none;
+}
+
+#reservation #reservation-sent h2.block-title {
+    margin-top: 95px;
+    font-size: 25px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#reservation #reservation-sent #reservation-sent-text {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 30px 0 105px 0;
+}
+
+#reservation #reserve-error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    opacity: 0;
+}
+
+#show-menu a.btn-yellow {
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+}
+
+#burger {
+    display: none;
+    color: white;
+    font-size: 32px;
+    line-height: 30px;
+}
